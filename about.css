@@ -1,0 +1,151 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial;
+    background:#f9f9f9;
+    direction: rtl;
+}
+
+/* HEADER */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#4caf50;
+    color:white;
+}
+
+.logo {
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* NAV */
+nav ul {
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+}
+
+/* BUTTONS */
+.auth-buttons a {
+    margin-left:10px;
+    padding:6px 12px;
+    background:white;
+    color:#4caf50;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* HERO */
+.about-hero {
+    text-align:center;
+    padding:60px;
+    background:#e8f5e9;
+}
+
+/* CARDS */
+.about-details {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.about-card {
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.about-card:hover {
+    transform:translateY(-10px);
+}
+
+.about-card img {
+    width:200px;
+    height: 200px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+.footer {
+    background:#2e7d32;
+    color:white;
+    padding:40px 20px;
+}
+
+.footer-container {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-box {
+    width:250px;
+}
+
+.footer-box a {
+    color:white;
+    text-decoration:none;
+}
+
+.social-icons img {
+    width:30px;
+    margin:5px;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .menu-toggle {
+        display:block;
+    }
+
+    nav {
+        display:none;
+        width:100%;
+    }
+
+    nav ul {
+        flex-direction:column;
+        background:#4caf50;
+        text-align:center;
+    }
+
+    nav.active {
+        display:block;
+    }
+
+    .auth-buttons {
+        display:none;
+    }
+
+    .about-details {
+        flex-direction:column;
+        align-items:center;
+    }
+}
